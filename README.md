@@ -1,30 +1,30 @@
 # Robot-arm
 
-**1. Install VM with ubuntu 18.04**
+**_1. Install VM with ubuntu 18.04._**
 
-**2. Install ROS melodic using the commands from "http://wiki.ros.org/melodic/Installation/Ubuntu" site**
+**_2. Install ROS melodic using the commands from "http://wiki.ros.org/melodic/Installation/Ubuntu" site._**
 
-**3. download robot arm package using:**
+**_3. download robot arm package using:_**
 ```
 $ git clone https://github.com/smart-methods/arduino_robot_arm.git
 ```
-**4. launch Rvis using the command:**
+**_4. launch Rvis using the command:_**
 ```
 $ roslaunch robot_arm_pkg check_motors.launch
 ```
-**5. launch Gazebo using the command:**
+**_5. launch Gazebo using the command:_**
 ```
 $ roslaunch robot_arm_pkg check_motors_gazebo.launch
 ```
-**6. Control the motors in simulation using:**
+**_6. Control the motors in simulation using:_**
 ```
 $ rosrun robot_arm_pkg joint_states_to_gazebo.py
 ```
-**7. launch move it set up assistant using:**
+**_7. launch move it set up assistant using:_**
 ```
 $ roslaunch moveit_setup_assistant setup_assistant.launch
 ```
-**8. launch move it in Rvis using the command:**
+**_8. launch move it in Rvis using the command:_**
 ```
 $ roslaunch moveit_pkg demo.launch
 ```
